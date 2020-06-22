@@ -1,0 +1,15 @@
+spring
+  profiles:
+    active:
+     - dev   ## 表示激活哪一个环境，现在激活的为开发环境
+---   ## 三个 - 意味着在配置文件中进行分割，表示不同的配置文件
+spring:
+  profiles: dev   #开发环境
+  application: 
+    name: microservicecloud-config-hc-dev
+---
+spring: 
+  profiles: test  #测试环境
+  application: 
+    name: microservicecloud-config-hc-test
+#注意：如果不是从项目中复制过来的，请保存为utf-8格式
